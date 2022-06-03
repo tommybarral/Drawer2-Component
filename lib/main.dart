@@ -1,4 +1,5 @@
 import 'package:custom_drawer_component/screens/home_screen.dart';
+import 'package:custom_drawer_component/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -19,10 +20,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-        primaryColor: Colors.deepPurple,
+        primarySwatch: Colors.deepPurple,
+        primaryColor: Colors.purple,
+        backgroundColor: Colors.purpleAccent[300],
       ),
-      home: const HomeScreen(),
+      home: const CustomDrawer(),
     );
   }
 }
